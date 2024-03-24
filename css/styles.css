@@ -115,9 +115,46 @@ button.btn-secondary:hover {
 
 /* --- Header --- */
 header {
-  background-color: #f8f8f8;
-  padding: 20px;
+  background-color: var(--color-black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 43px;
   text-align: center;
+  gap: 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-400);
+  font-family: var(--font-family-flama-basic);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.btn-nav {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  padding: 20px 34px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: var(--font-family-flama-basic);
+  font-size: var(--font-size-16);
 }
 
 /* --- Main --- */
