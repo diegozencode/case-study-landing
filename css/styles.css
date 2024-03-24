@@ -1,1 +1,226 @@
 /* Styles */
+
+/* --- Fonts --- */
+@font-face {
+  font-family: FlamaBasic;
+  src: url(../fonts/Flama-Basic.otf);
+  font-family: FlamaSemicondensed;
+  src: url(../fonts/Flama-Semicondensed-Semibold.otf);
+}
+
+/* --- Variables --- */
+:root {
+  --color-green: #005740;
+  --color-light-green: #a8d6ae;
+  --color-yellow: #f4a900;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-gray: #cccccc;
+  --color-background: #f8f4e6;
+
+  --font-family-roboto: "Roboto", sans-serif;
+  --font-family-roboto-condensed: "Roboto Condensed", sans-serif;
+  --font-family-flama-basic: "FlamaBasic", sans-serif;
+  --font-family-flama-semicondensed: "FlamaSemicondensed", sans-serif;
+
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-22: 22px;
+  --font-size-24: 24px;
+  --font-size-26: 26px;
+  --font-size-38: 38px;
+  --font-size-65: 65px;
+
+  --line-height-20: 20px;
+  --line-height-26: 26px;
+  --line-height-30: 30px;
+
+  --max-width-1200: 1200px;
+}
+
+/* --- Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- General --- */
+body {
+  font-family: var(--font-family-flama-basic);
+  font-weight: var(--font-weight-400);
+}
+
+h1 {
+  font-size: var(--font-size-65);
+  font-weight: var(--font-weight-700);
+  font-family: var(--font-family-flama-semicondensed);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: var(--font-size-38);
+  font-weight: var(--font-weight-700);
+  font-family: var(--font-family-flama-semicondensed);
+  text-transform: uppercase;
+}
+
+p {
+  font-size: var(--font-size-22);
+  line-height: var(--line-height-30);
+}
+
+button.btn-primary {
+  background-color: var(--color-yellow);
+  color: var(--color-black);
+  font-family: var(--font-family-flama-semicondensed);
+  font-weight: var(--font-weight-700);
+  font-size: var(--font-size-20);
+  line-height: var(--line-height-20);
+  text-transform: uppercase;
+  padding: 18px 56px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.btn-secondary {
+  background-color: var(--color-white);
+  color: var(--color-back);
+  font-family: var(--font-family-flama-semicondensed);
+  font-weight: var(--font-weight-700);
+  font-size: var(--font-size-18);
+  line-height: var(--line-height-20);
+  text-transform: uppercase;
+  padding: 20px 56px;
+  border: 2px solid var(--color-black);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+button.btn-secondary:hover {
+  background-color: var(--color-gray);
+}
+
+.container {
+  padding: 80px 20px;
+}
+
+/* --- Header --- */
+header {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+/* --- Main --- */
+.banner {
+  width: 100%;
+  display: flex;
+}
+
+.banner-left {
+  width: 40%;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-left-content {
+  max-width: 460px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.banner-left-content p {
+  font-family: var(--font-family-roboto-condensed);
+  font-size: var(--font-size-22);
+  font-weight: var(--font-weight-400);
+  line-height: var(--line-height-26);
+}
+
+.banner-right {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-right img {
+  width: 100%;
+}
+
+/* --- A - D --- */
+.a-d {
+  display: flex;
+  max-width: 1350px;
+  gap: 87px;
+}
+
+.a-d-left {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a-d-right {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+
+.a-d-right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-family: var(--font-family-flama-basic);
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-24);
+  line-height: var(--line-height-30);
+  padding: 46px 20px;
+}
+
+footer section {
+  max-width: var(--max-width-1200);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  max-width: 320px;
+  font-size: var(--font-size-26);
+}
+
+.footer-right ul {
+  list-style: none;
+  display: flex;
+  gap: 113px;
+}
+
+.footer-right ul li a {
+  color: var(--color-white);
+}

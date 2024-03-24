@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -31,16 +35,20 @@
     <!-- Main -->
     <main>
       <!-- Banner -->
-      <section>
-        <div>
-          <h1>Case Study</h1>
-          <p>We'll donate 50% of proceeds to your organization.</p>
-          <button>Make a Diffrence</button>
+      <section class="banner">
+        <div class="banner-left">
+          <div class="banner-left-content">
+            <h1>Fundraise with Dig</h1>
+            <p>We'll donate 50% of proceeds to your organization.</p>
+            <button class="btn-primary">Make a Diffrence</button>
+          </div>
         </div>
-        <img src="/img/banner.png" alt="Banner image" />
+        <div class="banner-right">
+          <img src="/img/banner.png" alt="Banner image" />
+        </div>
       </section>
       <!-- Menu - Home -->
-      <section>
+      <section class="container">
         <h2>Scratch-cooked for a cause</h2>
         <p>DIG'S Restaurant Fundraising</p>
         <div>
@@ -65,7 +73,7 @@
               that you're here for the fundraiser and we'll make sure your meal
               gets tracked as a part of the event.
             </p>
-            <button>Make a Difference</button>
+            <button class="btn-primary">Make a Difference</button>
             <small
               >Click <a href="#">here</a> for all fundraising guidelines</small
             >
@@ -74,7 +82,7 @@
         </div>
       </section>
       <!-- Reviews-->
-      <section>
+      <section class="container">
         <h2>How it works</h2>
         <p>Organize fundraisers in your community</p>
         <p>Request a date for your organization. 5 minutes is all it takes!</p>
@@ -100,10 +108,10 @@
             <p>Receive 50% of proceeds to your organization.</p>
           </div>
         </div>
-        <button>Make a Difference</button>
+        <button class="btn-primary">Make a Difference</button>
       </section>
       <!-- Reviews Carrousel -->
-      <section>
+      <section class="container">
         <div>
           <img src="/img/review-stars.png" alt="Review 1" />
           <h3>Review about the fundraising</h3>
@@ -116,8 +124,8 @@
         </div>
       </section>
       <!-- A - D -->
-      <section>
-        <div>
+      <section class="container a-d">
+        <div class="a-d-left">
           <div>
             <button>Dig on bleecker</button>
           </div>
@@ -128,7 +136,7 @@
             <button>Dig on Stanford</button>
           </div>
           <div>
-            <img src="/img/dig-1.png" alt="Dig 1" />
+            <img src="/img/plus-28.png" alt="Plus 28 icon" />
             <h4>Oher locations</h4>
             <p>
               in New York City, Brooklyn, Rye Brook, Stamford, Philadelphia,
@@ -136,29 +144,38 @@
             </p>
           </div>
         </div>
-        <div>
-          <h2>Your neighborhood.<br />Your kitchen.</h2>
-          <p>
-            Every DIG is a part of its neighborhood. Each location is led by a
-            local chef, serving fresh seasonal ingredients.
-          </p>
-          <button>Find a dig</button>
+        <div class="a-d-right">
+          <div class="a-d-right-content">
+            <h2>Your neighborhood.<br />Your kitchen.</h2>
+            <p>
+              Every DIG is a part of its neighborhood. Each location is led by a
+              local chef, serving fresh seasonal ingredients.
+            </p>
+            <button class="btn-secondary">Find a dig</button>
+          </div>
         </div>
       </section>
     </main>
     <!-- Footer -->
     <footer>
-      <div>
-        <small
-          >&copy;2023 Dig Inn Restaurant Group LLC. All rights reserved.</small
-        >
-      </div>
-      <div>
-        <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Use</a></li>
-        </ul>
-      </div>
+      <section>
+        <div class="footer-left">
+          <small
+            >&copy; 2023 Dig Inn Restaurant Group LLC. All rights
+            reserved.</small
+          >
+        </div>
+        <div class="footer-right">
+          <ul>
+            <li>
+              <a href="https://www.diginn.com/privacy-policy">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="https://www.diginn.com/terms-of-use">Terms of Use</a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </footer>
   </body>
 </html>
