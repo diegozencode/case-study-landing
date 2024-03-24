@@ -329,6 +329,57 @@ nav ul li a {
   line-height: var(--line-height-22);
 }
 
+/* --- Review --- */
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  max-width: 640px;
+}
+
+.review-item h3 {
+  font-family: var(--font-family-roboto-condensed);
+  font-size: var(--font-size-26);
+  font-weight: var(--font-weight-700);
+  line-height: var(--line-height-30);
+  text-transform: uppercase;
+}
+
+.review-item p {
+  font-family: var(--font-family-roboto-condensed);
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-400);
+  line-height: var(--line-height-26);
+}
+
+.review-item-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.review-item-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-gray);
+}
+
+.review-item-dots .dot.active {
+  background-color: var(--color-green);
+}
+
 /* --- A - D --- */
 .a-d {
   display: flex;
