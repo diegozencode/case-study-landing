@@ -383,24 +383,76 @@ nav ul li a {
 /* --- A - D --- */
 .a-d {
   display: flex;
-  max-width: 1350px;
-  gap: 87px;
-}
-
-.a-d-left {
-  width: 45%;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.a-d-right {
-  width: 55%;
+.a-d-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 87px;
+  max-width: 1350px;
+}
+
+.a-d-section-left {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  gap: 30px;
+}
+
+.flex-grid figure figcaption {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-family: var(--font-family-flama-semicondensed);
+  font-weight: var(--font-weight-700);
+  font-size: var(--font-size-26);
+  line-height: var(--line-height-20);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px;
+}
+
+.a-d-section-left-content {
+  width: 272px;
+  padding: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.a-d-section-left-content p {
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-400);
+  line-height: var(--line-height-20);
+}
+
+.a-d-section-left-content h4 {
+  font-family: var(--font-family-roboto-condensed);
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-600);
+  line-height: var(--line-height-20);
+  text-transform: uppercase;
+  color: var(--color-green);
+}
+
+.a-d-section-right {
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
 
-.a-d-right-content {
+.a-d-section-right-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
