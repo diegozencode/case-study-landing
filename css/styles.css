@@ -40,6 +40,8 @@
   --font-size-82: 82px;
 
   --line-height-20: 20px;
+  --line-height-22: 22px;
+  --line-height-24: 24px;
   --line-height-26: 26px;
   --line-height-30: 30px;
   --line-height-90: 90px;
@@ -277,6 +279,54 @@ nav ul li a {
 
 .home-section-content small a {
   color: var(--color-black);
+}
+
+/* --- Process --- */
+.process {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--color-background);
+}
+
+.process h2 {
+  color: var(--color-green);
+}
+
+.process-data {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 120px;
+  max-width: 1166px;
+  padding: 91px 0;
+}
+
+.process-data-item {
+  width: 198px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.process-data-item h3 {
+  font-family: var(--font-family-flama-semicondensed);
+  font-size: var(--font-size-22);
+  font-weight: var(--font-weight-700);
+  line-height: var(--line-height-26);
+  text-transform: uppercase;
+  color: var(--color-green);
+}
+
+.process-data-item p {
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-400);
+  line-height: var(--line-height-22);
 }
 
 /* --- A - D --- */
